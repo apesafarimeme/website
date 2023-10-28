@@ -11,7 +11,7 @@ interface TimeLeft {
 }
 
 const calculateTimeLeft = (): TimeLeft => {
-  const difference = +new Date('2023-10-29') - +new Date();
+  const difference = +new Date('2023-10-30') - +new Date();
   let timeLeft: TimeLeft = {
     days: 0,
     hours: 0,
