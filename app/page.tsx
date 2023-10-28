@@ -49,24 +49,6 @@ const IndexPage: React.FC = () => {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
         }}>
-      {/* <h1 className="text-4xl font-bold text-white mb-4">Presale starts in:</h1> */}
-      {/* <h2 className="text-2xl font-semibold mb-2">Countdown Timer</h2> */}
-      {/* <div className="flex text-white mt-96">
-        {timeLeft.days > 0 && (
-          <p className="text-xl md:text-3xl lg:text-5xl xl:text-6xl font-medium mr-4">
-            <span>{timeLeft.days}</span> d
-          </p>
-        )}
-          <p className="text-xl md:text-3xl lg:text-5xl xl:text-6xl font-medium mr-4">
-            <span>{timeLeft.hours}</span><br/>h
-          </p>
-          <p className="text-xl md:text-3xl lg:text-5xl xl:text-6xl font-medium mr-4">
-            <span>{timeLeft.minutes}</span> m
-          </p>
-          <p className="text-xl md:text-3xl lg:text-5xl xl:text-6xl font-medium">
-            <span>{timeLeft.seconds}</span> s
-          </p>
-      </div> */}
 
 <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
   <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
