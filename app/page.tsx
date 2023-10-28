@@ -43,39 +43,41 @@ const IndexPage: React.FC = () => {
   });
 
   return (
-    <div className="landingImage flex flex-col items-center justify-center min-h-screen bg-cover bg-center"
-        style={{ 
-            backgroundImage: `url('/countdown_page_bg.png')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-        }}>
+    <div className="landingImage flex flex-col items-center justify-center min-h-screen bg-cover bg-center">
+      <Image
+        fill
+        src="/countdown_page_bg.png"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        alt=''
+        priority={true}
+      />
 
-<div className="landingTimer grid grid-flow-col gap-5 text-center auto-cols-max">
-  <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-    <span className="countdown font-mono text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
-      {timeLeft.days < 10 ? `0${timeLeft.days}` : timeLeft.days}
-    </span>
-    days
-  </div> 
-  <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-    <span className="countdown font-mono text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
-      {timeLeft.hours < 10 ? `0${timeLeft.hours}` : timeLeft.hours}
-    </span>
-    hours
-  </div> 
-  <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-    <span className="countdown font-mono text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
-      {timeLeft.minutes < 10 ? `0${timeLeft.minutes}` : timeLeft.minutes}
-    </span>
-    min
-  </div> 
-  <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-    <span className="countdown font-mono text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
-      {timeLeft.seconds < 10 ? `0${timeLeft.seconds}` : timeLeft.seconds} 
-    </span>
-    sec
-  </div>
-</div>
+      <div className="landingTimer grid grid-flow-col gap-5 text-center auto-cols-max">
+        <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+          <span className="countdown font-mono text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+            {timeLeft.days < 10 ? `0${timeLeft.days}` : timeLeft.days}
+          </span>
+          days
+        </div> 
+        <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+          <span className="countdown font-mono text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+            {timeLeft.hours < 10 ? `0${timeLeft.hours}` : timeLeft.hours}
+          </span>
+          hours
+        </div> 
+        <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+          <span className="countdown font-mono text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+            {timeLeft.minutes < 10 ? `0${timeLeft.minutes}` : timeLeft.minutes}
+          </span>
+          min
+        </div> 
+        <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+          <span className="countdown font-mono text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+            {timeLeft.seconds < 10 ? `0${timeLeft.seconds}` : timeLeft.seconds} 
+          </span>
+          sec
+        </div>
+      </div>
 
     </div>
   );
