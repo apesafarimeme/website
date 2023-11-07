@@ -43,7 +43,7 @@ const IndexPage: React.FC = () => {
   });
 
   return (
-    <div className="hidden landingImage flex flex-col items-center justify-center min-h-screen bg-cover bg-center">
+    <div className="landingImage flex flex-col items-center justify-center min-h-screen bg-cover bg-center">
       <Image
         fill
         src="/countdown_page_bg.png"
@@ -52,7 +52,7 @@ const IndexPage: React.FC = () => {
         priority={true}
       />
 
-      <div className="landingTimer grid grid-flow-col gap-5 text-center auto-cols-max">
+      <div className="hidden landingTimer grid grid-flow-col gap-5 text-center auto-cols-max">
         <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
           <span className="countdown font-mono text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
             {timeLeft.days < 10 ? `0${timeLeft.days}` : timeLeft.days}
