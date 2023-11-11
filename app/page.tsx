@@ -43,12 +43,11 @@ const IndexPage: React.FC = () => {
   });
 
   return (
-    <div className="landingImage flex flex-col items-center justify-center min-h-screen bg-cover bg-center">
+    <div className="relative w-screen h-screen">
       <Image
         fill
         src="/countdown_page_bg.png"
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        alt=''
+        alt='Background Image'
         priority={true}
       />
 
