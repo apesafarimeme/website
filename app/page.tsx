@@ -48,8 +48,7 @@ const IndexPage: React.FC = () => {
         src="/countdown_page_bg.png"
         alt='African Savanna'
         priority={true}
-        fill
-        style={{objectFit:"contain"}}
+        style={{objectFit:"none"}}
       />
 
       <div className="hidden landingTimer grid grid-flow-col gap-5 text-center auto-cols-max">
