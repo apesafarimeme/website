@@ -43,16 +43,13 @@ const IndexPage: React.FC = () => {
   });
 
   return (
-    <div className="relative w-screen h-screen">
+    <div className="relative h-screen">
       <Image
         src="/countdown_page_bg.png"
         alt='African Savanna'
         priority={true}
-        sizes="100vw"
-        style={{
-          width: '100%',
-          height: 'auto',
-      }}
+        fill
+        style={{objectFit:"contain"}}
       />
 
       <div className="hidden landingTimer grid grid-flow-col gap-5 text-center auto-cols-max">
